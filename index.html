@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/emji.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Libarary Link -->
+
+    
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar p-20 p-relative bg-white">
+            <img class="rad-50" src="images/profile.jpg" alt="">
+            <h3 class="p-relative mt-0 txt-c">Yosra Shaltout</h3>
+            <div class="alt-name rad-50 flex-center">Y</div>
+            <ul>
+                <li>
+                    <a class="active d-flex ali-c fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projectis</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="firends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Firends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex ali-c fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fa-solid fa-business-time fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="content w-full">
+            <div class="head bg-white p-15 flex-between">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Search">
+                </div>
+                <div class="icons d-flex ali-c">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img class="rad-50" src="images/profile.jpg" alt="">
+                </div>
+            </div>
+            <h1 class="p-relative"> Dashboard <i class="fa-solid fa-chart-simple fa-fw"></i></h1>
+            <!-- Wrapper Section   -->
+            <div class="wrapper d-grid gap-20 p-relative m-l-20 m-r-20">
+                <!-- Welcome Widget  -->
+                <div class="welcome bg-white rad-10 txt-c-mobile d-block-mobile">
+                    <div class="intro p-20 flex-between bg-eee">
+                        <div>
+                            <h2 class="m-0 c-main">Welcome</h2>
+                            <p class="m-t-5 c-grey">Yosra Shaltout</p>
+                        </div>
+                        <img class="w-300 hide-n-mobile" src="images/welcome.png" alt="welcome">
+
+                    </div>
+                    <img src="images/avatar.jpg" alt="avatar" class="avatar rad-50">
+                    <div class="body txt-c d-flex p-20 m-t-20 m-b-20 d-block-mobile">
+                        <div>Yosra <span class="d-block c-grey fs-14 m-t-10">counselor</span></div>
+                        <div>265<span class="d-block c-grey fs-14 m-t-10">Lawsuit</span></div>
+                        <div>8500$<span class="d-block c-grey fs-14 m-t-10">Fees</span></div>
+                        
+                    </div>
+                    <a href="profile.html" class="visit d-block fs-14 rad-6 bg-main c-white w-fit btn-shape">Profile </a>
+                </div>
+                <!-- Quick Draft Widget  -->
+                <div class="quick-draft p-20 bg-white rad-10">
+                    <h2 class="m-t-0 m-b-10 c-main">Quick Draft</h2>
+                    <p class="m-t-0 m-b-20 c-grey fs-15"> Write Your Notes Here</p>
+                    <form action="">
+                        <input class="d-block m-b-20 w-full p-10 bg-eee rad-6 b-none" type="text" placeholder="Title">
+                        <textarea class="d-block m-b-20 w-full p-10 bg-eee rad-6 b-none" placeholder="Write Your Notes"></textarea>
+                        <input class="save d-block fs-14 bg-main c-white b-none w-fit btn-shape" type="submit" value="Save">
+                    </form>
+                </div>
+                <!-- Target widget  -->
+                <div class="target bg-white rad-10 p-20">
+                    <h2 class="m-t-0 m-b-10 c-main">Porgress At 2022</h2>
+                    <p class="c-grey m-t-0 m-b-20 fs-14 ">2022 Work Chart</p>
+                    <div class="row lawsuit m-b-20 flex-center ">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-scale-balanced fa-2x"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Lawsuits</span>
+                            <span class="fw-bold d-block m-t-5 m-b-10">168</span>
+                            <div class="progress p-relative">
+                                <span class="bg-blue" style="width: 78%;">
+                                    <span>78%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row important m-b-20 flex-center ">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-gavel fa-2x"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Important Cases</span>
+                            <span class="fw-bold d-block m-t-5 m-b-10">168</span>
+                            <div class="progress p-relative">
+                                <span class="bg-orange" style="width: 35%;">
+                                    <span>35%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row team m-b-20 flex-center ">
+                        <div class="icon flex-center">
+                            <i class="fa-solid fa-landmark fa-2x"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Legal Aid</span>
+                            <span class="fw-bold d-block m-t-5 m-b-10">168</span>
+                            <div class="progress p-relative">
+                                <span class="bg-green" style="width: 66%;">
+                                    <span class="">66%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Tickets Widget  -->
+                <div class="tickets p-20 bg-white rad-10">
+                    <h2 class="m-t-0 m-b-10 c-main">Civil law Section</h2>
+                    <p class="c-grey fs-15 m-b-20 ">Every Section Of Civil Law </p>
+                    <div class="holder d-flex f-wrap gap-20 txt-c">
+                        <div class="box border-ccc p-20 rad-6 fs-14 c-grey ">
+                            <div class="image m-t-0 m-b-10">
+                                <img class="w-50" src="images/judge.png" alt="">                                
+                            </div>
+                            <span class="fw-bold c-black fs-25">165</span>
+                            <span class="d-block ">Standards</span>
+                        </div>
+                        <div class="box border-ccc p-20 rad-6 fs-14 c-grey ">
+                            <div class="image m-t-0 m-b-10">
+                                <img class="w-50" src="images/jury.png" alt="">                                
+                            </div>
+                            <span class="fw-bold c-black fs-25">13</span>
+                            <span class="d-block ">jury</span>
+                        </div>
+                        <div class="box border-ccc p-20 rad-6 fs-14 c-grey ">
+                            <div class="image m-t-0 m-b-10">
+                                <img class="w-50" src="images/law.png" alt="">                                
+                            </div>
+                            <span class="fw-bold c-black fs-25">188</span>
+                            <span class="d-block ">Law Intro</span>
+                        </div>
+                        <div class="box border-ccc p-20 rad-6 fs-14 c-grey ">
+                            <div class="image m-t-0 m-b-10">
+                                <img class="w-50" src="images/compliant.png" alt="">                                
+                            </div>
+                            <span class="fw-bold c-black fs-25">19</span>
+                            <span class="d-block ">Compliant</span>
+                        </div>
+                
+                    </div>
+
+                </div>
+                <!-- Latest News Widget -->
+                <div class="news p-20 bg-white rad-10 txt-c-mobile">
+                    <h2 class="m-t-0 m-b-20 c-main">Latest News</h2>
+                    <div class="row border-b-ccc d-flex ali-c m-b-20 p-b-20 d-block-mobile">
+                        <img class="w-100 h-70 m-r-20" src="images/news.png" alt="news">
+                        <div class="info">
+                            <h3 class="fs-15 m-t-0 m-b-10">Modifications</h3>
+                            <p class="c-grey fs-14 m-b-10">Latest Modifications in The Civil Law</p>
+                        </div>
+                        <span class="d-block rad-10 bg-eee w-fit p-4-9 fs-12 "> 2 Days Ago </span>
+                    </div>
+                    <div class="row border-b-ccc d-flex ali-c m-b-20 p-b-20 d-block-mobile">
+                        <img class="w-100 h-70 m-r-20 m-t-10 " src="images/legal.png" alt="news">
+                        <div class="info">
+                            <h3 class="fs-15 m-t-0 m-b-10">Praivacy</h3>
+                            <p class="c-grey fs-14 m-b-10 ">Adding New Praivacy Policy Terms </p>
+                        </div>
+                        <span class="d-block rad-10 bg-eee w-fit p-4-9 fs-12 "> 3 Days Ago </span>
+                    </div>
+                    <div class="row border-b-ccc d-flex ali-c m-b-20 p-b-20 d-block-mobile">
+                        <img class="w-100 h-70 m-r-20 m-t-10" src="images/scale.png" alt="news">
+                        <div class="info">
+                            <h3 class="fs-15 m-t-0 m-b-10">Developing Online Web</h3>
+                            <p class="c-grey fs-14 m-b-10 ">Adding A New Search Tech</p>
+                        </div>
+                        <span class="d-block rad-10 bg-eee w-fit p-4-9 fs-12 "> 5 Days Ago </span>
+                    </div>
+                    <div class="row d-flex ali-c d-block-mobile">
+                        <img class="w-100 h-70 m-r-20 m-t-10" src="images/document.png" alt="news">
+                        <div class="info">
+                            <h3 class="fs-15 m-t-0 m-b-10">Payment Updates</h3>
+                            <p class="c-grey fs-14 m-b-10 ">Many New Payment Gateways Added</p>
+                        </div>
+                        <span class="d-block rad-10 bg-eee w-fit p-4-9 fs-12 "> 6 Days Ago </span>
+                    </div>
+                </div>
+                <!-- Tasks Widget  -->
+                <div class="tasks p-20 bg-white rad-10">
+                    <h2 class="m-t-0 m-b-20 c-main">Daily Tasks</h2>
+                    <div class="task-row flex-between">
+                        <div class="info border-b-ccc m-b-15 p-b-15">
+                            <h3 class="m-t-0 m-b-5 fs-15"> Sign A Lawsuit</h3>
+                            <p class="m-0 c-grey fs-14"> Sign Lawsuit That Mister Ga3der Will Reject </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+                    <div class="task-row flex-between">
+                        <div class="info border-b-ccc m-b-15 p-b-15">
+                            <h3 class="m-t-0 m-b-5 fs-15"> Watching Mr. White</h3>
+                            <p class="m-0 c-grey fs-14"> Watching Breaking bad TV Show </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+                    <div class="task-row flex-between">
+                        <div class="info border-b-ccc m-b-15 p-b-15">
+                            <h3 class="m-t-0 m-b-5 fs-15">Go to Eat</h3>
+                            <p class="m-0 c-grey fs-14"> Going To Mom To have Dinner </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+                    <div class="task-row flex-between done">
+                        <div class="info border-b-ccc m-b-15 p-b-15">
+                            <h3 class="m-t-0 m-b-5 fs-15">Anonying Ahmed</h3>
+                            <p class="m-0 c-grey fs-14"> Anonying Ahmed Is My Favourit  </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+                    <div class="task-row flex-between">
+                        <div class="info border-b-ccc m-b-15 p-b-15">
+                            <h3 class="m-t-0 m-b-5 fs-15"> Write A Lawsuit</h3>
+                            <p class="m-0 c-grey fs-14"> Write Lawsuit That Will Go To Court Tomorrow </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+                    <div class="task-row flex-between">
+                        <div class="info ">
+                            <h3 class="m-t-0 m-b-5 fs-15"> Play A Game</h3>
+                            <p class="m-0 c-grey fs-14"> Play Candy Crash Is Shit Game </p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+
+                    </div>
+
+                </div>
+                <!-- Top Search Widget  -->
+                <div class="top-search bg-white rad-10 p-20">
+                    <h2 class="m-t-0 m-b-20 c-main">The Mostly Search Topics</h2>
+                    <div class="items-head d-flex space-b m-b-10">
+                        <span class="c-grey ">Topic</span>
+                        <span class="c-grey">Seo Num.</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>Adminstration Law</span>
+                        <span class="bg-eee p-4-9 rad-6">2330</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>Criminal Law</span>
+                        <span class="bg-eee p-4-9 rad-6">1722</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>Procedures Law</span>
+                        <span class="bg-eee p-4-9 rad-6">3781</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>History Of Law</span>
+                        <span class="bg-eee p-4-9 rad-6">201</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>Finance Law</span>
+                        <span class="bg-eee p-4-9 rad-6">795</span>
+                    </div>
+                    <div class="topics d-flex space-b p-t-15 p-b-15">
+                        <span>Aviation Law</span>
+                        <span class="bg-eee p-4-9 rad-6">841</span>
+                    </div>
+                </div>
+                <!-- Latest Upload  -->
+                <div class="latest-upload p-20 bg-white rad-10">
+                    <h2 class="m-t-0 m-b-20 c-main">Latest Upload</h2>
+                    <ul class="m-0">
+                        <li class="flex-between p-b-10 m-b-10 border-b-ccc">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/pdf.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">civil-code.pdf</span>
+                                    <span class="fs-15 c-grey">Yosra</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                3.3mb
+                            </div>
+                        </li>
+                        <li class="flex-between p-b-10 m-b-10 border-b-ccc">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/avi.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">master-coding.avi</span>
+                                    <span class="fs-15 c-grey">Ahmed</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                5.7mb
+                            </div>
+                        </li>
+                        <li class="flex-between p-b-10 m-b-10 border-b-ccc">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/dll-file.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">keyframe.dll</span>
+                                    <span class="fs-15 c-grey">Eman</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                1.1mb
+                            </div>
+                        </li>
+                        <li class="flex-between p-b-10 m-b-10 border-b-ccc">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/zip.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">el3abeet.zip</span>
+                                    <span class="fs-15 c-grey">Mahboub</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                15.9mb
+                            </div>
+                        </li>
+                        <li class="flex-between p-b-10 m-b-10 border-b-ccc">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/music.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">public-talk</span>
+                                    <span class="fs-15 c-grey">Yosra</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                6.3mb
+                            </div>
+                        </li>
+                        <li class="flex-between p-b-10 m-b-10">
+                            <div class="d-flex ali-c ">
+                                <img class="m-r-10 w-40" src="images/photoshop.png" alt="pdf">
+                                <div>
+                                    <span class="d-block">design.psd</span>
+                                    <span class="fs-15 c-grey">Ahmed</span>
+                                </div>
+                            </div>
+                            <div class="bg-eee p-4-9 fs-13 rad-6">
+                                11.2mb
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Current Project  -->
+                <div class="current-project p-20 bg-white rad-10 p-relative">
+                    <h2 class="m-t-0 m-b-20 c-main">Current Project</h2>
+                    <ul class="m-0 p-relative">
+                        <li class="m-t-25 d-flex ali-c done">Got The Project</li>
+                        <li class="m-t-25 d-flex ali-c done">Started The Project</li>
+                        <li class="m-t-25 d-flex ali-c done">The Project About To Finish</li>
+                        <li class="m-t-25 d-flex ali-c current">Test The Project</li>
+                        <li class="m-t-25 d-flex ali-c ">Finish The Project & Get Money</li>
+                    </ul>
+                    <img class="hide-n-mobile w-160 launch-icon" src="images/rocket-launch.gif" alt="rocket">
+                </div>
+                <!-- Reminders  -->
+                <div class="reminder p-20 bg-white rad-10 p-relative">
+                    <h2 class="m-t-0 m-b-25 c-main">Reminders</h2>
+                    <ul class="m-0">
+                        <li class="d-flex ali-c m-t-15">
+                            <span class="key bg-blue m-r-15 d-block rad-50"></span>
+                            <div class="p-l-15 blue">
+                                <p class="m-t-0 m-b-5 fw-bold fs-14">Check My Tasks List</p>
+                                <span class="fs-13 c-grey">28/09/2022 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex ali-c m-t-15">
+                            <span class="key bg-red m-r-15 d-block rad-50"></span>
+                            <div class="p-l-15 red">
+                                <p class="m-t-0 m-b-5 fw-bold fs-14">Check My Projects</p>
+                                <span class="fs-13 c-grey">26/10/2022 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex ali-c m-t-15">
+                            <span class="key bg-green m-r-15 d-block rad-50"></span>
+                            <div class="p-l-15 green">
+                                <p class="m-t-0 m-b-5 fw-bold fs-14">Call All My Clients</p>
+                                <span class="fs-13 c-grey">05/11/2022 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex ali-c m-t-15">
+                            <span class="key bg-orange m-r-15 d-block rad-50"></span>
+                            <div class="p-l-15 orange">
+                                <p class="m-t-0 m-b-5 fw-bold fs-14">Finish The Development Workshop</p>
+                                <span class="fs-13 c-grey">20/12/2022 - 12:00am</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Latest Post  -->
+                <div class="latest-post p-20 bg-white rad-10 p-relative ">
+                    <h2 class="m-t-0 m-b-25 c-main">Posts</h2>
+                    <div class="post-head d-flex ali-c">
+                        <img class="avatar w-50 rad-50 m-r-20" src="images/profile.jpg" alt="avatar">
+                        <div class="info ">
+                            <span class="d-block fw-bold">Yosra Shaltout <i class="fa-solid fa-circle-check c-blue "></i></span>
+                            
+                            <span class="fs-13 c-grey">2h ·</span> 
+                            <i class="fa-solid fa-earth-americas c-grey"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="post-text txt-c-mobile p-b-20 p-t-20 m-b-20 m-t-20 border-b-eee">
+                        How many times have you heard 
+                        that nothing can be done for your case? Sometimes it is even true. Some other times, U visa, 245(i), T visa or some other relief is simply overlooked. Maybe you should try again?:) call us 917 885 2261! (Consultation fee applies)
+                    </div>
+                    <div class="message flex-between border-b-eee m-b-20 p-b-10">
+                        <span class="fw-bold">Law Consultant</span>
+                        <a href="#" class="button btn-shape c-black bg-eee"><i class="fa-brands fa-facebook-messenger c-black"></i> Send Message</a>
+                    </div>
+                    <div class="post-stats flex-between border-b-eee m-b-20 p-b-10">
+                        <div class="icons d-flex">
+                            <div class="emoji-like rad-50 w-32 h-32 p-relative">
+                                <i class="fas fa-thumbs-up fs-20 c-white"></i>
+                            </div>
+                            <div class="emoji-love rad-50 w-32 h-32 p-relative">
+                                <div class="emoji-heart"></div>
+                            </div>
+                            <span class="c-grey m-l-5 fs-13">2.9k</span>
+                        </div>
+                        <div class="comments c-grey ">
+                            <span class="m-r-10">521 comments <i class="fa-regular fa-comment c-grey"></i></span>
+                            <span>3 shares <i class="fa-solid fa-share c-grey "></i></span>
+                        </div>
+                    </div>
+                    <div class="interact flex-between">
+                        <div class="like c-grey p-relative btn-shape bg-eee">
+                            <div class="emojis flex-between gap-15 p-absolute bg-eee p-2-5">
+                                <div class="emoji emoji-like rad-50 w-32 h-32 p-relative">
+                                    <i class="fas fa-thumbs-up fs-20 c-white"></i>
+                                </div>
+                                <div class="emoji emoji-love rad-50 w-32 h-32 p-relative">
+                                    <div class="emoji-heart"></div>
+                                </div>
+                                <div class="emoji emoji-haha ">
+                                    <div class="emoji-face">
+                                      <div class="emoji-eyes"></div>
+                                      <div class="emoji-mouth">
+                                        <div class="emoji-tongue"></div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="emoji emoji-yay">
+                                    <div class="emoji-face">
+                                      <div class="emoji-eyebrows"></div>
+                                      <div class="emoji-mouth"></div>
+                                    </div>
+                                </div>
+                                <div class="emoji emoji-wow">
+                                    <div class="emoji-face">
+                                      <div class="emoji-eyebrows"></div>
+                                      <div class="emoji-eyes"></div>
+                                      <div class="emoji-mouth"></div>
+                                    </div>
+                                </div>
+                                <div class="emoji emoji-sad">
+                                    <div class="emoji-face">
+                                      <div class="emoji-eyebrows"></div>
+                                      <div class="emoji-eyes"></div>
+                                      <div class="emoji-mouth"></div>
+                                    </div>
+                                </div>
+                                <div class="emoji emoji-angry">
+                                    <div class="emoji-face">
+                                      <div class="emoji-eyebrows"></div>
+                                      <div class="emoji-eyes"></div>
+                                      <div class="emoji-mouth"></div>
+                                    </div>                           
+                                </div> 
+                            </div>
+                            <i class="fa-regular fa-thumbs-up"></i> Like
+                        </div>
+                        <div class="comment c-grey btn-shape bg-eee">
+                            <i class="fa-regular fa-comment c-grey"></i> Comment
+                        </div>
+                        <div class="share c-grey btn-shape bg-eee">
+                            <i class="fa-solid fa-share "></i> Share
+                        </div>
+                        <div class="image p-relative">
+                            <img class="w-28 rad-50" src="images/profile.jpg" alt="">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Soical Media  -->
+                <div class="social-media p-20 bg-white rad-10 p-relative">
+                    <h2 class="m-t-0 m-b-25 c-main">Find Me At</h2>
+                    <div class="box twitter p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-twitter fa-2x c-white h-full flex-center"></i>
+                        <span>90K Followers</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Follow</a>
+                    </div>
+                    <div class="box facebook p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-facebook fa-2x c-white h-full flex-center"></i>
+                        <span>1.2M Likes</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Like</a>
+                    </div>
+                    <div class="box tiktok p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-tiktok fa-2x c-white h-full flex-center"></i>
+                        <span>290k Followers</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Follow</a>
+                    </div>
+                    <div class="box youtube p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-youtube fa-2x c-white h-full flex-center"></i>
+                        <span>500K Subscription</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Subscribe</a>
+                    </div>
+                    <div class="box linkedin p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-linkedin fa-2x c-white h-full flex-center"></i>
+                        <span>177k Followers</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Follow</a>
+                    </div>
+                    <div class="box insta p-15 m-b-10 p-relative flex-between">
+                        <i class="fa-brands fa-instagram fa-2x c-white h-full flex-center"></i>
+                        <span>900k Followers</span>
+                        <a class="fs-13 btn-shape c-white" href="#">Follow</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Projects Table  -->
+            <div class="projects bg-white p-20 m-20 rad-10">
+                <h2 class="m-t-0 m-b-20 c-main">Lawcases Table</h2>
+                <div class="resposive-table ">
+                    <table class="fs-15 w-full">
+                        <thead>
+                            <tr>
+                                <td>Allegation</td>
+                                <td>Case Num</td>
+                                <td>Date</td>
+                                <td>Role</td>
+                                <td>Circle</td>
+                                <td>Team</td>
+                                <td>Status </td>
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Buhaira governor</td>
+                                <td>31/2019</td>
+                                <td>17 April 2023 </td>
+                                <td>21</td>
+                                <td>Itay Civil C.</td>
+                                <td>
+                                    <img class="w-32" src="images/team1.png" alt="team">
+                                    <img class="w-32" src="images/team3.png" alt="team">
+                                    <img class="w-32" src="images/team2.png" alt="team">
+                                    <img class="w-32" src="images/team4.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-orange c-white"> Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Minister of Transport</td>
+                                <td>266/2022</td>
+                                <td>7 May 2023 </td>
+                                <td>71</td>
+                                <td>Damanhour Civil C.</td>
+                                <td>
+
+                                    <img class="w-32" src="images/team3.png" alt="team">
+                                    <img class="w-32" src="images/team1.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-blue c-white"> In Progress</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City Council</td>
+                                <td>11/2018</td>
+                                <td>24 jan 2023 </td>
+                                <td>11</td>
+                                <td>Itay Civil C.</td>
+                                <td>
+
+                                    <img class="w-32" src="images/team2.png" alt="team">
+                                    <img class="w-32" src="images/team4.png" alt="team">
+                                    <img class="w-32" src="images/team3.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-orange c-white"> Pending</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Minister of Justice</td>
+                                <td>109/2002</td>
+                                <td>17 April 2023 </td>
+                                <td>35</td>
+                                <td>Damanhour Civil C.</td>
+                                <td>
+                                    <img class="w-32" src="images/team1.png" alt="team">
+
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-green c-white"> Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Buhaira governor</td>
+                                <td>21/2020</td>
+                                <td>20 june 2023 </td>
+                                <td>3</td>
+                                <td>Itay Civil C.</td>
+                                <td>
+
+                                    <img class="w-32" src="images/team3.png" alt="team">
+                                    <img class="w-32" src="images/team2.png" alt="team">
+
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-green c-white"> Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Itay City Council</td>
+                                <td>7/2023</td>
+                                <td>17 April 2023 </td>
+                                <td>21</td>
+                                <td>Itay Civil C.</td>
+                                <td>
+
+                                    <img class="w-32" src="images/team3.png" alt="team">
+                                    <img class="w-32" src="images/team2.png" alt="team">
+                                    <img class="w-32" src="images/team4.png" alt="team">
+                                </td>
+                                <td>
+                                    <span class="label p-2-5 rad-6 bg-blue c-white"> In Progress</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+    
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>
